@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          src="./profile.png"
+          alt="Profile photo of Samuel Adeniyi"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div>
+        <header>
+          <h2 data-testid="test-user-name">Samuel Adeniyi</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend developer passionate about accessibility, performance, and
+          elegant UI design. I love transforming ideas into user-friendly
+          digital experiences.
+        </p>
+
+<div class="timer" data-testid="test-user-time" id="user-time"></div>
+
+        <nav aria-label="Social Links" >
+          <ul data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://x.com/thefrontrade"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                X
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/theFrontrade"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/thefrontrade"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="hobbies-title">
+          <h3 id="hobbies-title">Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Programming</li>
+            <li>Gaming</li>
+            <li>Reading</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes-title">
+          <h3 id="dislikes-title">Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Noise pollution</li>
+            <li>Cluttered UIs</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>

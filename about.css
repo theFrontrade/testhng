@@ -1,0 +1,122 @@
+/* Layout */
+.about-container {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Section Titles */
+.about-section h2,
+.story-section h2,
+.goals-section h2,
+.confidence-section h2,
+.extra-section h2,
+.reflection-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1e3a8a;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Goals */
+.goals-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.goals-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Confidence Areas Grid */
+.confidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.confidence-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.confidence-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Reflection */
+.reflection-section p {
+  font-style: italic;
+  color: #374151;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-section h2,
+  .story-section h2,
+  .goals-section h2,
+  .confidence-section h2,
+  .reflection-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+ .contact-button{
+   width: 100%;
+   height: 48px;
+   background-color: transparent;
+   border : 1px solid #1570EF;
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: #1570EF;
+   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+   border-radius: 8px;
+   margin:  0;
+   font-family: 'Inter', sans-serif;
+   cursor: pointer;
+ }

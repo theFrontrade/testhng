@@ -61,23 +61,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // On submit
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+ form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    successMessage.style.display = "none";
+  successMessage.style.display = "none";
 
-    let isValid = true;
+  let isValid = true;
 
+  ["name", "email", "subject", "message"].forEach((field) => {
+    validateField(field);
+    const errorText = document.getElementById(`error-${field}`).textContent;
+    if (errorText) isValid = false;
+  });
+
+  if (isValid) {
+    successMessage.style.display = "block";
+    form.reset();
+
+    // Remove validation temporarily after success
     ["name", "email", "subject", "message"].forEach((field) => {
-      validateField(field);
-      const errorText = document.getElementById(`error-${field}`).textContent;
-      if (errorText) isValid = false;
+      clearError(field);
+      const input = form[field];
+      input.removeEventListener("blur", () => validateField(field));
     });
 
-    if (isValid) {
-      successMessage.style.display = "block";
-      form.reset();
-      form.name.focus(); // Return focus for accessibility
-    }
-  });
+    // Focus back for accessibility (optional)
+    form.name.blur();
+  }
+});
 });

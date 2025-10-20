@@ -113,3 +113,41 @@
         margin-bottom: 2rem;
         text-align: center;
       }
+      .cta-wrap{
+        width: 100%;
+        display: flex ;gap: 10px;
+         align-items: center;
+         justify-content: center;
+         margin-top: 20px;
+       
+      }
+
+       .cta-button{
+   width: 100%;
+   height: 48px;
+   background-color: #1570EF;
+   border : none;
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: #d0d5dd;
+   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+   border-radius: 8px;
+   
+   font-family: 'Inter', sans-serif;
+   cursor: pointer;
+ }
+
+ .cta-outline-button{
+   width: 100%;
+   height: 48px;
+   background-color: transparent;
+   border : 1px solid #1570EF;
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: #1570EF;
+   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+   border-radius: 8px;
+   margin:  0;
+   font-family: 'Inter', sans-serif;
+   cursor: pointer;
+ }

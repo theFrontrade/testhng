@@ -1,123 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link rel="stylesheet" href="about.css" />
-  </head>
-
-  <body>
-    <main class="about-container" data-testid="test-about-page">
-      <!-- Header -->
-      <header class="about-header" data-testid="test-about-header">
-        <h1>About Me</h1>
-        <p>A reflective page where I share my thoughts and personal journey.</p>
-      </header>
-
-      <!-- Bio Section -->
-      <section
-        class="about-section"
-        data-testid="test-about-bio"
-        aria-labelledby="bio-heading"
-      >
-        <h2 id="bio-heading">Bio</h2>
-        <p>
-          Hello! I’m <strong>Samuel Adeniyi</strong>, a passionate front-end
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <main class="about-container" data-testid="test-about-page">
+            <!-- Header -->
+            <header class="about-header" data-testid="test-about-header">
+                <h1>About Me</h1>
+                <p>A reflective page where I share my thoughts and personal journey.</p>
+            </header>
+            <!-- Bio Section -->
+            <section class="about-section" data-testid="test-about-bio" aria-labelledby="bio-heading">
+                <h2 id="bio-heading">Bio</h2>
+                <p>
+                    Hello! I’m
+                    <strong>Samuel Adeniyi</strong>
+                    , a passionate front-end
           developer who enjoys crafting responsive, accessible, and user-friendly
           web experiences. I believe in building interfaces that balance
           functionality with simplicity and design that feels intuitive to users.
-        </p>
-      </section>
-
-      <!-- Goals in this program -->
-      <section
-        class="goals-section"
-        data-testid="test-about-goals"
-        aria-labelledby="goals-heading"
-      >
-        <h2 id="goals-heading">Goals in This Program</h2>
-        <ul role="list">
-          <li>Strengthen my understanding of modern front-end development.</li>
-          <li>Learn best practices for building scalable web applications.</li>
-          <li>Collaborate effectively with other developers and mentors.</li>
-          <li>Gain confidence in problem-solving and clean code structure.</li>
-        </ul>
-      </section>
-
-      <!-- Areas of Low Confidence -->
-      <section
-        class="confidence-section"
-        data-testid="test-about-confidence"
-        aria-labelledby="confidence-heading"
-      >
-        <h2 id="confidence-heading">Areas of Low Confidence</h2>
-        <div class="confidence-grid">
-          <article class="confidence-item" role="listitem">
-            <h3>Backend Integration</h3>
-            <p>
-              I’m still improving my understanding of connecting front-end
+                </p>
+            </section>
+            <!-- Goals in this program -->
+            <section class="goals-section" data-testid="test-about-goals" aria-labelledby="goals-heading">
+                <h2 id="goals-heading">Goals in This Program</h2>
+                <ul role="list">
+                    <li>Strengthen my understanding of modern front-end development.</li>
+                    <li>Learn best practices for building scalable web applications.</li>
+                    <li>Collaborate effectively with other developers and mentors.</li>
+                    <li>Gain confidence in problem-solving and clean code structure.</li>
+                </ul>
+            </section>
+            <!-- Areas of Low Confidence -->
+            <section class="confidence-section" data-testid="test-about-confidence" aria-labelledby="confidence-heading">
+                <h2 id="confidence-heading">Areas of Low Confidence</h2>
+                <div class="confidence-grid">
+                    <article class="confidence-item" role="listitem">
+                        <h3>Backend Integration</h3>
+                        <p>
+                            I’m still improving my understanding of connecting front-end
               components with backend APIs efficiently.
-            </p>
-          </article>
-
-          <article class="confidence-item" role="listitem">
-            <h3>Advanced Testing</h3>
-            <p>
-              I’m building confidence in writing automated tests that cover edge
+                        </p>
+                    </article>
+                    <article class="confidence-item" role="listitem">
+                        <h3>Advanced Testing</h3>
+                        <p>
+                            I’m building confidence in writing automated tests that cover edge
               cases and ensure accessibility standards.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Note to Future Self -->
-      <section
-        class="reflection-section"
-        data-testid="test-about-future-note"
-        aria-labelledby="future-note-heading"
-      >
-        <h2 id="future-note-heading">Note to Future Self</h2>
-        <p>
-          Keep learning, stay curious, and never compare your journey to others.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- Note to Future Self -->
+            <section class="reflection-section" data-testid="test-about-future-note" aria-labelledby="future-note-heading">
+                <h2 id="future-note-heading">Note to Future Self</h2>
+                <p>
+                    Keep learning, stay curious, and never compare your journey to others.
           Progress is growth, no matter how small. Remember why you started —
           because you love creating and solving real-world problems through
           code.
-        </p>
-      </section>
-
-      <!-- Extra Thoughts -->
-      <section
-        class="extra-section"
-        data-testid="test-about-extra"
-        aria-labelledby="extra-heading"
-      >
-        <h2 id="extra-heading">Extra Thoughts</h2>
-        <p>
-          This journey has taught me that consistency beats perfection. Every
+                </p>
+            </section>
+            <!-- Extra Thoughts -->
+            <section class="extra-section" data-testid="test-about-extra" aria-labelledby="extra-heading">
+                <h2 id="extra-heading">Extra Thoughts</h2>
+                <p>
+                    This journey has taught me that consistency beats perfection. Every
           bug fixed, every challenge solved, and every project completed is a
           step toward mastery. I’m proud of how far I’ve come and excited for
           what’s next.
-        </p>
-      </section>
-      <section>
-         <div class="about-btn-wrapper" style="text-align: center; margin-top: 20px;">
-        <button
-          type="button"
-          id="contact"
-          class="contact-button"
-          data-testid="test-contact-button"
-          onclick="window.location.href='contact.html'"
-          aria-label="Go to Contact page"
-        >
-          Go to Contact
-        </button>
-      </section>
-
-      <!-- Footer -->
-      <footer class="about-footer" data-testid="test-about-footer">
-        <p>&copy; 2025 Samuel Adeniyi. All rights reserved.</p>
-      </footer>
-    </main>
-  </body>
-</html>
+                </p>
+            </section>
+            <section>
+                <div class="about-btn-wrapper" style="text-align: center; margin-top: 20px;"> </div>
+                    <button
+                        type="button"
+                        id="contact"
+                        class="contact-button"
+                        data-testid="test-contact-button"
+                        onclick="window.location.href='contact.html'"
+                        aria-label="Go to Contact page"
+                    >
+                        Go to Contact
+                    </button>
+                </section>
+                <!-- Footer -->
+                <footer class="about-footer" data-testid="test-about-footer">
+                    <p>&copy; 2025 Samuel Adeniyi. All rights reserved.</p>
+                </footer>
+            </main>
+        </body>
+    </html>

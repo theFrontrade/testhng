@@ -1,137 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="contact.css" />
-  </head>
-  <body>
-    <main class="contact-wrap">
-      <h1 style="font-size: 30px;">Contact Me</h1>
-      <p class="contact-span">
-        Hi there, contact me to ask me about anything you have in mind.
-      </p>
-
-      <form id="contact-form" class="contact-form" novalidate aria-labelledby="contact-heading">
-  
-        <div class="form-group">
-          <label for="name" class="contact-name-p">Full Name</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            class="contact-name-input"
-            placeholder="Enter your full name"
-            data-testid="test-contact-name"
-            aria-describedby="error-name"
-            aria-required="true"
-          />
-          <span
-            id="error-name"
-            class="contact-err-message"
-            role="alert"
-            data-testid="test-contact-error-name"
-          ></span>
-        </div>
-
-        <div class="form-group">
-          <label for="email" class="contact-name-p">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            class="contact-name-input"
-            placeholder="yourname@email.com"
-            data-testid="test-contact-email"
-            aria-describedby="error-email"
-            aria-required="true"
-          />
-          <span
-            id="error-email"
-            class="contact-err-message"
-            role="alert"
-            data-testid="test-contact-error-email"
-          ></span>
-        </div>
-
-     
-        <div class="form-group">
-          <label for="subject" class="contact-name-p">Subject</label>
-          <input
-            id="subject"
-            name="subject"
-            type="text"
-            class="contact-name-input"
-            placeholder="Enter a subject"
-            data-testid="test-contact-subject"
-            aria-describedby="error-subject"
-            aria-required="true"
-          />
-          <span
-            id="error-subject"
-            class="contact-err-message"
-            role="alert"
-            data-testid="test-contact-error-subject"
-          ></span>
-        </div>
-
-
-        <div class="form-group">
-          <label for="message" class="contact-name-p">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            class="contact-name-input-message"
-            placeholder="Send me a message and I'll reply as soon as possible..."
-            data-testid="test-contact-message"
-            aria-describedby="error-message"
-            aria-required="true"
-          ></textarea>
-          <span
-            id="error-message"
-            class="contact-err-message"
-            role="alert"
-            data-testid="test-contact-error-message"
-          ></span>
-        </div>
-        <p
-          id="success-message"
-          class="contact-success-message"
-          data-testid="test-contact-success"
-          style="color:#16a34a; font-size:1rem; display:none; text-align:center;"
-          role="status"
-        >
-           Message sent successfully!
-        </p>
-        <button
-          type="submit"
-          id="btn__submit"
-          class="send-message-button"
-          data-testid="test-contact-submit"
-        >
-          Send Message
-        </button>
-        <div class="about-btn-wrapper" style="text-align: center; margin-top: 20px;">
-        <button
-          type="button"
-          id="about-btn"
-          class="about-button"
-          data-testid="test-about-button"
-          onclick="window.location.href='about.html'"
-          aria-label="Go to About page"
-        >
-          Go to About Me
-        </button>
-      </div>
-
-
-      </form>
-      <footer class="contact-footer" data-testid="test-contact-footer">
-        <p>&copy; 2025 Samuel Adeniyi. All rights reserved.</p>
-      </footer>
-    </main>
-
-    <script src="contact.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <main class="contact-wrap">
+            <h1 style="font-size: 30px;">Contact Me</h1>
+            <p class="contact-span">
+                Hi there, contact me to ask me about anything you have in mind.
+            </p>
+            <form
+                id="contact-form"
+                class="contact-form"
+                novalidate
+                aria-labelledby="contact-heading"
+            >
+                <div class="form-group">
+                    <label for="name" class="contact-name-p">Full Name</label>
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        class="contact-name-input"
+                        placeholder="Enter your full name"
+                        data-testid="test-contact-name"
+                        aria-describedby="error-name"
+                        aria-required="true"
+                    >
+                    <span
+                        id="error-name"
+                        class="contact-err-message"
+                        role="alert"
+                        data-testid="test-contact-error-name"
+                    ></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="contact-name-p">Email</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        class="contact-name-input"
+                        placeholder="yourname@email.com"
+                        data-testid="test-contact-email"
+                        aria-describedby="error-email"
+                        aria-required="true"
+                    >
+                    <span
+                        id="error-email"
+                        class="contact-err-message"
+                        role="alert"
+                        data-testid="test-contact-error-email"
+                    ></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="contact-name-p">Subject</label>
+                    <input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        class="contact-name-input"
+                        placeholder="Enter a subject"
+                        data-testid="test-contact-subject"
+                        aria-describedby="error-subject"
+                        aria-required="true"
+                    >
+                    <span
+                        id="error-subject"
+                        class="contact-err-message"
+                        role="alert"
+                        data-testid="test-contact-error-subject"
+                    ></span>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="contact-name-p">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        class="contact-name-input-message"
+                        placeholder="Send me a message and I'll reply as soon as possible..."
+                        data-testid="test-contact-message"
+                        aria-describedby="error-message"
+                        aria-required="true"
+                    ></textarea>
+                    <span
+                        id="error-message"
+                        class="contact-err-message"
+                        role="alert"
+                        data-testid="test-contact-error-message"
+                    ></span>
+                </div>
+                <p
+                    id="success-message"
+                    class="contact-success-message"
+                    data-testid="test-contact-success"
+                    style="color:#16a34a; font-size:1rem; display:none; text-align:center;"
+                    role="status"
+                >
+                    Message sent successfully!
+                </p>
+                <button
+                    type="submit"
+                    id="btn__submit"
+                    class="send-message-button"
+                    data-testid="test-contact-submit"
+                >
+                    Send Message
+                </button>
+                <div class="about-btn-wrapper" style="text-align: center; margin-top: 20px;">
+                    <button
+                        type="button"
+                        id="about-btn"
+                        class="about-button"
+                        data-testid="test-about-button"
+                        onclick="window.location.href='about.html'"
+                        aria-label="Go to About page"
+                    >
+                        Go to About Me
+                    </button>
+                </div>
+            </form>
+            <footer class="contact-footer" data-testid="test-contact-footer">
+                <p>&copy; 2025 Samuel Adeniyi. All rights reserved.</p>
+            </footer>
+        </main>
+        <script src="contact.js"></script>
+    </body>
 </html>
